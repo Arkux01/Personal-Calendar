@@ -1,0 +1,157 @@
+@import url('http://fonts.cdnfonts.com/css/common-pixel');
+@import url('http://fonts.cdnfonts.com/css/phatone');
+@import url('http://fonts.cdnfonts.com/css/newtieng');
+
+.link, .title, .text{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'NewTieng',courier;
+    user-select: none;
+}
+.link{
+    padding: 10px;
+    color: grey;
+    text-align: left;
+}
+.title{
+    padding: 10px;
+    color: cyan;
+    text-align: right;
+}
+.text{
+    color: cyan;
+    text-align: left;
+}
+
+.submit, .code ,.checkmark{
+    background-color: #101030;
+    color: cyan;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'NewTieng',courier;
+    border-radius: 5px;
+}
+.submit, .code {
+    padding: 10px;
+    font-size: 20px;
+    border:0;
+    margin: 3px 0px;
+}
+.code {width:220px;}
+.submit:hover,.code:hover {
+    background-color: #555555;
+    color: cyan;
+}
+
+.time, .content, .optionList{
+    background-color: cyan;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'NewTieng',arial;
+    font-weight: bold;
+    border:0;
+}
+.time, .content{
+    color: #101030;
+    border-radius: 5px;
+    margin: 3px 0px; 
+}
+.optionList {color: #060;}
+.time{padding: 4.5px;cursor: pointer;}
+.content {padding: 7px 10px;width: 170px;}
+
+.checkmark {
+    padding: 7px 10px;
+    font-size: 20px;
+    margin: 3px 0px;
+    cursor: pointer;
+    user-select: none;
+}
+.container {font-size: 20px;}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.container input:disabled ~ .checkmark {
+    background-color: #222;
+    color:#444;
+}
+.container:hover input ~ .checkmark {
+    background-color: #555555;
+}
+.container input:checked ~ .checkmark {
+    background-color: cyan;
+    color:#101030;
+}
+
+a {text-decoration: none;}
+a:hover {color:cyan; text-decoration: underline;}
+
+.yearMonth {
+    padding: 2px;
+    border-radius: 0px;
+    background-color: #1f1e33;                                                                    font-family: 'Common Pixel', sans-serif;
+    font-family: 'Phatone', sans-serif;
+    color: #cce;
+    font-size:100%;
+    user-select: none;
+}
+.day {
+    padding: 1px;
+    border-radius: 3px;
+    background-color: #4f4e58;
+    font-family: courier;
+    font-size:130%;
+    color: #bbb;
+    user-select: none;
+}
+
+.background,.backgroundNoEvent,.backgroundToday {
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+.background {background-color: #002;}
+.backgroundNoEvent {background-color: #060606;}
+.backgroundToday {border: 2px solid cyan;background-color: #249;}
+
+.dates, .datesToday,.datesNoEvent,.datesHoliday {
+    font-family:'Common Pixel', courier;
+    font-size:150%;
+    user-select: none;
+}
+.dates {color: #6bb;}
+.datesToday { color: #5ef; font-weight: bold;}
+.datesNoEvent {color: #444;}
+.datesHoliday {color: #956;}
+
+.events,.eventsDeadline,.eventsCleared,.eventsImportant,.eventsSched_1,.eventsSched_2,.eventsSched_3,.eventsSched_4,.eventsSched_5 {
+    font-family:'NewTieng',arial;
+    font-size:100%;
+}
+.events {color: cyan;}
+.eventsSched_1 {color: #2d2;}
+.eventsSched_2 {color: #f66;}
+.eventsSched_3 {color: #288;}
+.eventsSched_4 {color: #e82;}
+.eventsSched_5 {color: #d7d;}
+.eventsDeadline {color: yellow;}
+.eventsImportant {color: #006;font-weight:bold;background-color: cyan;}
+.eventsCleared {text-decoration: line-through;color: grey;}
+
+.statusSuccess,.statusFailure{
+    font-size:20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'NewTieng',courier;
+}
+.statusSuccess{color: #2d0;}
+.statusFailure{color: #d00;}
