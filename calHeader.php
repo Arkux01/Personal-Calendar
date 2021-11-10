@@ -1,4 +1,7 @@
 <?php
+// calHeader.php should be put on the parent directory of oher files.
+
+
     date_default_timezone_set("Asia/Hong_Kong");
 
 class Event {
@@ -312,7 +315,7 @@ class Month extends Day {
         if($post["pw"]==""){
             return 0;
         }
-        $verif = file_get_contents('verif.txt');
+        $verif = file_get_contents('password_file.txt'); // Change to your own name!
         if(strcmp($post["pw"],$verif)!=0){
             return -1;
         }
